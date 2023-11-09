@@ -1,45 +1,74 @@
-body {
-    padding: 0;
-}
-
 .flex-container,
-.header,
+.nav-bar,
 .intro,
 .info,
 .quote,
 .sign-up,
 .footer,
-.header-links {
+.header-links,
+.intro-text,
+.logo-header {
     display: flex;
 }
 
-.flex-container,
-.header {
-    flex-direction: column;
+.info,
+.quote,
+.intro-text,
+.footer,
+.sign-up {
+    justify-content: center;
 }
 
 .flex-container {
+    flex-direction: column;
+}
+
+/* Styling Header */
+.logo-text {
+
+}
+
+.logo-header {
     align-items: center;
+    gap: 16px;
 }
 
 .nav-bar {
     justify-content: space-between;
+    padding: 0 16px 0 16px;
+    top: 0;
     align-items: center;
+    margin: 0;
 }
 
 .header-links {
     list-style-type: none;
     align-items: baseline;
-    padding: 0px;
     margin: 0;
-}
-
-li.logo-point {
-    margin-right: auto;
+    gap: 16px;
 }
 
 ul a {
     text-decoration: none;
     margin-right: auto;
     color: inherit;
+}
+
+/* Styling intro */
+.intro {
+    justify-content: space-evenly;
+}
+
+.intro-text {
+    flex-direction: column;
+}
+
+/* Styling info */
+.info {
+    justify-content: center;
+}
+
+/* Styling quote */
+.quote {
+    justify-content: center;
 }
